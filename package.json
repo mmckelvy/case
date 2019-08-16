@@ -1,0 +1,24 @@
+{
+  "name": "@mmckelvy/case",
+  "version": "1.0.0",
+  "description": "A set of utility functions converting the case of strings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "keywords": [
+    "case",
+    "camel",
+    "case",
+    "snake",
+    "case"
+  ],
+  "author": "Mark McKelvy",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^2.2.0"
+  },
+  "dependencies": {
+    "@mmckelvy/map-object": "^1.0.0"
+  }
+}
