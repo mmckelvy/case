@@ -28,8 +28,8 @@ camelCase('first-name');
 snakeCase('First--Name');
 // -> 'first_name'
 
-camelCase('apple pear');
-// -> 'applePear'
+camelCase('first name');
+// -> 'firstName'
 ```
 
 A frequent use case for case conversion is converting the case of object keys.  `case` comes with `camelCaseKeys` and `snakeCaseKeys` helper methods to handle this use case:
@@ -119,16 +119,18 @@ camelCaseKeys(input, {recursive: true});
 ```
 
 ## API
-#### `snakeCase(str)`
+### `snakeCase(str)`
 Convert a string to snake_case.
 
+
+#### params
 **str**
 `string`
 
-**returns**
+#### return
 `string`
 
-A new string in snake_case
+A new string in snake_case.
 
 
 
