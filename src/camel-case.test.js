@@ -10,7 +10,8 @@ test('camelCase - Should camel case strings', t => {
     'camel case',
     'camel_Case',
     'Camel_case',
-    'camelCase'
+    'camelCase',
+    'camel case'
   ];
 
   for (const str of strings) {

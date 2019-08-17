@@ -9,7 +9,9 @@ test('snakeCase - Should snake case strings', t => {
     'snake--case',
     'snake case',
     'snake-Case',
-    'snake_case'
+    'snake_case',
+    'Snake---Case',
+    'snake case'
   ];
 
   for (const str of strings) {
