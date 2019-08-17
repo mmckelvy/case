@@ -147,13 +147,13 @@ The string to convert.
 A new string in snake_case.
 
 
-### `camelCaseKeys(input, options)`
+### `camelCaseKeys(input, options?)`
 Convert object keys to camelCase.
 
 #### input
 `object` or `object[]`
 
-An object or array of objects whose keys you'd like to convert.
+An object or array of objects with keys you'd like to convert.
 
 #### options (optional)
 `object`
@@ -167,13 +167,13 @@ Recursively convert keys for nested objects and arrays.
 A new `object` or `object[]` (does not mutate the original `object` or `object[]`).
 
 
-### `snakeCaseKeys(input, options)`
+### `snakeCaseKeys(input, options?)`
 Convert object keys to snake_case.
 
 #### input
 `object` or `object[]`
 
-An object or array of objects whose keys you'd like to convert.
+An object or array of objects with keys you'd like to convert.
 
 #### options (optional)
 `object`
