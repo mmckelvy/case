@@ -122,13 +122,12 @@ camelCaseKeys(input, {recursive: true});
 ### `snakeCase(str)`
 Convert a string to snake_case.
 
-
-#### params:
-`{string}` str
+#### str
+`string`
 
 The string to convert.
 
-#### return:
-`{string}`
+#### return
+`string`
 
 A new string in snake_case.
