@@ -124,9 +124,11 @@ Convert a string to snake_case.
 
 
 #### params:
-str `string`
+**`str`** `string`
+
 The string to convert.
 
 #### return:
 `string`
+
 A new string in snake_case.
