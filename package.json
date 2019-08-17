@@ -13,6 +13,10 @@
     "snake",
     "case"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mmckelvy/case.git"
+  },
   "author": "Mark McKelvy",
   "license": "MIT",
   "devDependencies": {

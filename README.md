@@ -20,7 +20,7 @@ snakeCase('firstName');
 
 ```
 
-Handles kabob-case, extra underscores, and spaces as well:
+Handles kabob-case, extra characters, and spaces as well:
 ```javascript
 camelCase('first-name');
 // -> 'firstName'
