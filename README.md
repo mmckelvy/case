@@ -123,19 +123,12 @@ camelCaseKeys(input, {recursive: true});
 Convert a string to snake_case.
 
 
-#### params
-**str**
-`string`
+#### params:
+str `string`
 
-#### return
+The string to convert.
+
+#### return:
 `string`
 
 A new string in snake_case.
-
-
-
-
-
-
-
-
