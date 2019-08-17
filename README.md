@@ -124,7 +124,7 @@ Convert a string to snake_case.
 
 
 #### params:
-**`str`** `string`
+**`str`** | `string`
 
 The string to convert.
 
