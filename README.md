@@ -119,6 +119,20 @@ camelCaseKeys(input, {recursive: true});
 ```
 
 ## API
+### `camelCase(str)`
+Convert a string to camelCase.
+
+#### str
+`string`
+
+The string to convert.
+
+#### return
+`string`
+
+A new string in camelCase.
+
+
 ### `snakeCase(str)`
 Convert a string to snake_case.
 
@@ -131,3 +145,44 @@ The string to convert.
 `string`
 
 A new string in snake_case.
+
+
+### `camelCaseKeys(input, options)`
+Convert object keys to camelCase.
+
+#### input
+`object` or `object[]`
+
+An object or array of objects whose keys you'd like to convert.
+
+#### options (optional)
+`object`
+
+##### options.recursive
+`boolean`
+
+Recursively convert keys for nested objects and arrays.
+
+#### return
+A new `object` or `object[]` (does not mutate the original `object` or `object[]`).
+
+
+### `snakeCaseKeys(input, options)`
+Convert object keys to snake_case.
+
+#### input
+`object` or `object[]`
+
+An object or array of objects whose keys you'd like to convert.
+
+#### options (optional)
+`object`
+
+##### options.recursive
+`boolean`
+
+Recursively convert keys for nested objects and arrays.
+
+#### return
+A new `object` or `object[]` (does not mutate the original `object` or `object[]`).
+
