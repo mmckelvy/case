@@ -23,6 +23,6 @@
     "ava": "^2.2.0"
   },
   "dependencies": {
-    "@mmckelvy/map-object": "^1.0.0"
+    "@mmckelvy/map-object": "^1.0.2"
   }
 }
