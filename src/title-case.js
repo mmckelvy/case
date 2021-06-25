@@ -20,15 +20,15 @@ function isLower(char) {
 const noop = () => {};
 
 /**
-* Convert a string to Proper case. Handles capitals, spaces, dashes, and underscores.
-* properCase => Proper case
-* proper-case => Proper case
-* proper case => Proper case
+* Convert a string to Title Case. Handles capitals, spaces, dashes, and underscores.
+* titleCase => Title Case
+* title-case => Title Case
+* title case => Proper Case
 *
 * @param {string} str
 * @return {string}
 */
-module.exports = function properCase(str) {
+module.exports = function titleCase(str) {
   let result = '';
 
   for (let i = 0; i < str.length; i++) {
@@ -39,7 +39,7 @@ module.exports = function properCase(str) {
       result += char.toUpperCase();
 
     } else if (isUpper(char) && isLower(prevChar)) {
-      result += ` ${char.toLowerCase()}`;
+      result += ` ${char}`;
 
     } else if (shouldReplace(prevChar) && shouldReplace(char)) {
       noop();
@@ -47,8 +47,11 @@ module.exports = function properCase(str) {
     } else if (shouldReplace(char)) {
       result += ' ';
 
+    } else if (isLower(char) && shouldReplace(prevChar)) {
+      result += char.toUpperCase();
+
     } else {
-      result += char.toLowerCase();
+      result += char;
     }
   }
 

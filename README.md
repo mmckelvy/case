@@ -18,6 +18,11 @@ camelCase('first_name');
 snakeCase('firstName');
 // -> 'first_name'
 
+properCase('first_name');
+// -> 'First name'
+
+titleCase('first_name');
+// -> 'First Name'
 ```
 
 Handles kabob-case, extra characters, and spaces as well:
@@ -27,9 +32,6 @@ camelCase('first-name');
 
 snakeCase('First--Name');
 // -> 'first_name'
-
-camelCase('first name');
-// -> 'firstName'
 ```
 
 A frequent use case for case conversion is converting the case of object keys.  `case` comes with `camelCaseKeys` and `snakeCaseKeys` helper methods to handle this use case:
@@ -62,7 +64,6 @@ snakeCaseKeys(camelToSnake);
   last_name: 'Smith'
 };
 */
-
 ```
 Works with arrays:
 
@@ -146,6 +147,32 @@ The string to convert.
 
 A new string in snake_case.
 
+### `properCase(str)`
+Convert a string to Proper case.
+
+#### str
+`string`
+
+The string to convert.
+
+#### return
+`string`
+
+A new string in Proper case.
+
+### `titleCase(str)`
+Convert a string to Title Case.
+
+#### str
+`string`
+
+The string to convert.
+
+#### return
+`string`
+
+A new string in Title Case.
+
 
 ### `camelCaseKeys(input, options?)`
 Convert object keys to camelCase.
@@ -185,4 +212,3 @@ Recursively convert keys for nested objects and arrays.
 
 #### return
 A new `object` or `object[]` (does not mutate the original `object` or `object[]`).
-
