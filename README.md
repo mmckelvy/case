@@ -147,6 +147,7 @@ The string to convert.
 
 A new string in snake_case.
 
+
 ### `properCase(str)`
 Convert a string to Proper case.
 
@@ -159,6 +160,7 @@ The string to convert.
 `string`
 
 A new string in Proper case.
+
 
 ### `titleCase(str)`
 Convert a string to Title Case.
@@ -212,3 +214,27 @@ Recursively convert keys for nested objects and arrays.
 
 #### return
 A new `object` or `object[]` (does not mutate the original `object` or `object[]`).
+
+
+### `compare(a, b, fn?)`
+Standardize two strings and then compare them.
+
+#### a
+`string`
+
+The first string to compare.
+
+#### b
+`string`
+
+The second string to compare.
+
+#### fn (optional)
+`function`
+
+A function applied to each string to standardize it.  Defaults to `snakeCase`.
+
+#### return
+`boolean`
+
+`true` if the strings are `===` after applying the standardization function, else `false`.

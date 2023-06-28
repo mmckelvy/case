@@ -5,5 +5,5 @@ module.exports = {
   camelCaseKeys: require('./src/camel-case-keys'),
   properCase: require('./src/proper-case'),
   titleCase: require('./src/title-case'),
-  compare: require('./compare');
+  compare: require('./src/compare')
 };
